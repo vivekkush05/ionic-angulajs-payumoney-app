@@ -1,0 +1,52 @@
+<ion-view>
+        <ion-nav-bar class="bar bar-dark bar-header theme-header">
+            <ion-nav-back-button class="button-icon button-clear ion-ios-arrow-left"></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+              <button 
+                  class="button button-icon button-clear" menu-toggle="left">
+                  <svg width="22" height="40">
+                      <path stroke="#fff" d="M0,10 22,10" stroke-width="3"></path>
+                      <path stroke="#fff" d="M0,19 12,19" stroke-width="3"></path>
+                      <path stroke="#fff" d="M0,28 22,28" stroke-width="3"></path>
+                  </svg>
+              </button>
+            </ion-nav-buttons>
+            <ion-nav-title><h1 class="title">Load Money</h1></ion-nav-title>
+        </ion-nav-bar>
+        <ion-content class="light_grey_bg">
+            
+               
+            
+            <div class="grey_bg">
+                <form class="contact-form" name="projectForm">
+                    <label class="group-label">Load Wallet</label>
+                    <label class="group-label"> Wallet Balance <span><i class="fa fa-inr"></i> {{wallet.walletmoney}}</label>
+                    
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="number" placeholder='Load Money' ng-model="loadMoney.amount">
+                            </label>
+                           
+                        </div>
+                    
+                    <button class="button button-block button-dark theme-btn icon ion-android-done-all" 
+                    type="button" ng-click="payWithPayMoney()">&nbsp; Load Money</button>
+                    
+                    
+                 
+                    
+
+
+
+                </form>
+            </div>
+
+
+
+
+
+      
+            
+        </ion-content>
+        </ion-view>
+        
